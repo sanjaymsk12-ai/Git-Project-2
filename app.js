@@ -17,3 +17,54 @@ window.addEventListener("wheel", function(event){
         console.log("scroll up");
     }
 });
+
+
+let arr = [{
+    Pic:"",
+    Course:"CCC",
+    Fee:"1000",
+    Time:"3 Months"
+},{
+    Pic:"",
+    Course:"DCA",
+    Fee:"7000",
+    Time:"12 Months"
+},{
+    Pic:"",
+    Course:"PGDCA",
+    Fee:"10000",
+    Time:"12 Months"
+},{
+    Pic:"",
+    Course:"NTT",
+    Fee:"5500",
+    Time:"2 Years"
+},{
+    Pic:"",
+    Course:"Tally",
+    Fee:"4000",
+    Time:"6 Months"
+}]
+
+let sum = ''
+
+arr.forEach(function(elem,index){
+    sum = sum + `<div class="card">
+    <div class="up">
+    <img src="ccc.png" alt="">
+    <h1>${elem.Course}</h1>
+    <h1>Fees :${elem.Fee}</h1>
+    <h1>Time :${elem.Time}</h1>
+    </div>
+    
+    <div class="down">
+    <button>View Details</button>
+    </div>
+    </div>`
+});
+
+console.log(sum);
+
+let view2 = document.querySelector('#view2')
+let body = document.querySelector('body')
+view2.innerHTML = sum;

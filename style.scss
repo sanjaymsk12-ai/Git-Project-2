@@ -52,11 +52,14 @@
   #main {
     // width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   #view1 {
-    // width: 100%;
-    height: 100%;
+    height: 100vh;
+
   }
   
   
@@ -66,7 +69,7 @@
     justify-content: space-between;
     padding: 3rem 4rem;
     background: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
     
     width: 100%;
@@ -186,15 +189,14 @@
   
 // CENTER CONTENT
 #center {
-    height: auto;
+    height:auto;
     border-radius: 10px;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -60%);
     display: flex;
     flex-direction: column;
-    
+
+    margin-top: 20%;
+    margin-bottom: 80%;
+
     h5 {
       color: white;
       font-size: 5.7em;
@@ -226,6 +228,13 @@
     }
   
   @media(max-width: 768px) {
+      height:auto;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50%;
+      margin-bottom: 80%;
+
     h5 {
         font-size: 2.5em;
         text-align: center;
@@ -253,12 +262,13 @@
   
 .video-container {
   position: relative;
-  width: 90%;
+  width: 55%;
   max-width: 70vw;
   min-width: 20vw;
   aspect-ratio: 16 / 9;
   margin: auto;
   margin-bottom: 10rem;
+  border-radius: 2rem;
   
     iframe {
       position: absolute;
@@ -292,23 +302,33 @@
 }
  
 #view2{
-  width: 100%;
-  padding: 1rem 2rem;
+  width: 108rem;
+  max-width: 100%;
+  padding: 1rem 2.5rem;
   display: flex;
-  justify-content: space-evenly;
-  
+  justify-content: space-around;
+  flex-wrap: wrap;
+ 
 
-  #card{
+  // background-color: #fff;
+  gap: 1rem;
+  // position:relative;
+  // left: 50%;
+  // top: 50%;
+  // transform:translate(-50%,-50%);
+
+  .card{
     background-color: #000000;
-    width: 18em;
-    max-width: 20em;
+    width: 24em;
+    max-width: 30em;
     min-width: 16em;
     height: 30em;
     max-height: 28em;
     border-radius: 0.4em;
+    margin-top: 2em;
      
-      .up{
-      width: 18em;
+    .up{
+      width: 100%;
       height: 25em;
       background-color: #171717;
       font-size: 1em;
@@ -335,7 +355,7 @@
       background-color:#24cfa6;
       border: none;
       border-radius: 0.3em;
-      font-size: 1em;
+      font-size: 1.5em;
       font-family: Helvet-M;
       padding: 0.4em 0.2em;
       margin-top: 1em;
@@ -345,10 +365,12 @@
   }
   
   @media(max-width: 768px){
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 5em;
+    
   }
 
 }
