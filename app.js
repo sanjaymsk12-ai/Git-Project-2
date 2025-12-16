@@ -22,7 +22,7 @@ document.addEventListener("wheel", function(event){
 let arr = [{
     Pic:"",
     Course:"CCC",
-    Fee:"1000",
+    Fee:"3000",
     Time:"3 Months"
 },{
     Pic:"",
