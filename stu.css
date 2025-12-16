@@ -22,6 +22,10 @@
   font-family: Helvet-L;
   src: url("./HelveticaNowDisplay-Light_M4nzWhve6k_k7HolyzL10.woff2");
 }
+@font-face {
+  font-family: NeueM;
+  src: url("./NeueMachina-Regular_DQCmjH1st.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -76,14 +80,10 @@ body {
   text-align: center;
   color: white;
   font-size: 0.7rem;
-  font-family: juana;
+  font-family: NeueM;
 }
 @media (max-width: 768px) {
   #main {
-    width: 100%;
-    height: auto;
-    padding: 1rem 1rem;
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
@@ -91,22 +91,14 @@ body {
   #main .card {
     width: 80%;
     height: 26em;
-    border-radius: 1rem;
-    overflow: hidden;
-    border: 0.1rem solid rgb(26, 119, 97);
-    margin: 0.5rem;
     gap: 1rem;
   }
   #main .card span {
     font-size: 1.3rem;
-    font-family: Helvet-EB;
-    color: #f2ff02;
     font-weight: 800;
   }
   #main .card h1 {
     text-align: center;
-    color: rgb(255, 255, 255);
     font-size: 0.9rem;
-    font-family: juana;
   }
 }/*# sourceMappingURL=stu.css.map */
