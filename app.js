@@ -1,7 +1,7 @@
 let nav = document.getElementById("nav");
 
 
-window.addEventListener("wheel", function(event){
+document.addEventListener("wheel", function(event){
     if(event.deltaY > 0){
         // Scroll Down
         nav.style.position = "fixed";
@@ -44,6 +44,36 @@ let arr = [{
     Course:"Tally",
     Fee:"4000",
     Time:"6 Months"
+},{
+    Pic:"",
+    Course:"Tally",
+    Fee:"4000",
+    Time:"6 Months"
+},{
+    Pic:"",
+    Course:"Tally",
+    Fee:"4000",
+    Time:"6 Months"
+},{
+    Pic:"",
+    Course:"Tally",
+    Fee:"4000",
+    Time:"6 Months"
+},{
+    Pic:"",
+    Course:"Tally",
+    Fee:"4000",
+    Time:"6 Months"
+},{
+    Pic:"",
+    Course:"Tally",
+    Fee:"4000",
+    Time:"6 Months"
+},{
+    Pic:"",
+    Course:"Tally",
+    Fee:"4000",
+    Time:"6 Months"
 }]
 
 let sum = ''
@@ -68,3 +98,10 @@ console.log(sum);
 let view2 = document.querySelector('#view2')
 let body = document.querySelector('body')
 view2.innerHTML = sum;
+
+
+var btn = document.getElementById('btnstu')
+
+btn.addEventListener("click", function () {
+    window.open("stu.html", "_blank");
+});
